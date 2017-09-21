@@ -2,7 +2,7 @@
 Trabajo final para el curso de taller de software (página web).
 Descripcion del proyecto
 
-#Integrantes del proyecto
+# Integrantes del proyecto
 
 * Pajuelo Gustavo
 * Roldan Miguel
