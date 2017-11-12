@@ -1,0 +1,96 @@
+body {
+    font-family: arial;
+    background-image: url(http://4.bp.blogspot.com/-eRrtlEWWBSY/UPLOpxZz5XI/AAAAAAAAyo0/QwsBr-FJOrU/s00/Ferrari-458-Italia-Rojo-1920x1200-Wallpapers-Fondos-HD-de-Carros-Ferrari.jpg);
+    color:white;
+    width:900px;
+    margin: 0 auto;
+    background-size:cover;
+	background-repeat: no-repeat;
+}
+header {
+    background-color:#848484;
+    height:80px;
+}
+#izquierda {
+    float: left;
+    width: 33%;
+    text-align: center;
+    padding-top:20px;
+}
+#derecha {
+    float: right;
+    width:50%;
+    text-align: center;
+    padding-top:35px;
+    font-size:14px;
+}
+#iniciar {
+    padding:0 15px;
+}
+#vender {
+    padding:0 15px;
+}
+#registrate {
+    padding:0 15px;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+h1 {
+	text-align: center;
+	color: black;
+}
+
+form {
+	padding: 10px;
+  	border: 2px solid #c1c1c1;
+	border-radius: 50px;
+  	margin-top: 10px;
+  	max-width: 600px;
+	overflow: hidden;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+
+form input {
+  margin-bottom: 10px;
+  background: #fff;
+  border: 1px solid #9c9c9c;
+}
+form button {
+  background: lightgrey;
+  padding: 10px;
+  border: 0;
+}
+form button:hover {
+  background: gold;
+}
+
+label {
+	color:black;
+  text-align: right;
+  display: block;
+  padding: 8px 10px 8px 0;
+	float: left;
+    width: 200px;
+}
+
+
+input , textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 8px;
+	float: left;
+    width: calc(100% - 200px);
+}
+input:focus {
+  outline: 3px solid gold;
+}
+
+button {
+    float: left;
+    width: calc(100% - 200px);
+  }
