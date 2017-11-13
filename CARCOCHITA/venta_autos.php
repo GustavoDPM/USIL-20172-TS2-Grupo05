@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>VENDE TU VEHICULO</title>
-
+<link href="css/estilo.css" rel="stylesheet"/>
 <link href="css/venta.css" rel="stylesheet"/>
 
 </head>
@@ -21,5 +21,6 @@
 	<label>Descripcion: </label><textarea name="descripcion"></textarea></br>
 	<button>Enviar Datos</button>
 </form>
+<?php include 'plantillas/pie.php' ?>
 </body>
 </html>

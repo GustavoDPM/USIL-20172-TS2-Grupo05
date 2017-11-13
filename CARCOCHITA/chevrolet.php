@@ -39,5 +39,6 @@
             <img src="https://cde.3.neoauto.com/marca/800x600/2511/437101_3224096.jpg?20171110223822" width="200"/>
             </div>
         </section>
+        <?php include 'plantillas/pie.php' ?>
     </body>
 </html>

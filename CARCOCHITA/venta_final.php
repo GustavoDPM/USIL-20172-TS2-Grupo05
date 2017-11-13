@@ -10,5 +10,6 @@
 <body>
 <?php include 'plantillas/header.php' ?>
 <p><h1>Se ha completado la venta de su vehiculo, nos pondremos en contacto con usted en un plazo maximo de 48 horas.</h1></p>
+<?php include 'plantillas/pie.php' ?>
 </body>
 </html>

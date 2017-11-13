@@ -39,5 +39,7 @@
             <img src="https://i.ytimg.com/vi/JtB8Tsoif98/maxresdefault.jpg" width="200"/>
             </div>
         </section>
+        <section id="clear"></section>
+        <?php include 'plantillas/pie.php' ?>
     </body>
 </html>

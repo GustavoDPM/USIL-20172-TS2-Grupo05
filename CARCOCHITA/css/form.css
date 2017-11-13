@@ -1,12 +1,6 @@
-body{
-	font-family: arial;
-	background-image:url(http://3.bp.blogspot.com/-wlt3bTnyySE/TXkFOVS10bI/AAAAAAAAACc/TIkmRzKyShU/s1600/Alfa-Romeo-8C-Competizione.jpg);
-	color: white;
-	width: 900px;
-	margin: 0 auto;
-	background-size: cover;
-	background-repeat: no-repeat;
-}
+
+
+
 h1{
 	text-align:center;
 }
@@ -41,44 +35,14 @@ label{
 }
 #contenedor{
 	width: 500px;
-	margin: 0auto;
+	margin: 0 auto;
 	border: 3px solid #333;
 	border-radius: 8px;
 	padding: 20px;
 	margin-left: 22%;
 }
-footer{
-	text-align: center;
-	border-top: 3px solid #fff;
-	padding: 10px;
-}
 
-header{
-    background-color:#848484;
-    height:80px;
-}
-#izquierda{
-    float: left;
-    width: 33%;
-    text-align: center;
-    padding-top:20px;
-}
-#derecha{
-    float: right;
-    width:50%;
-    text-align: center;
-    padding-top:35px;
-    font-size:14px;
-}
-#iniciar{
-    padding:0 15px;
-}
-#vender{
-    padding:0 15px;
-}
-#registrate{
-    padding:0 15px;
-}
+
 h2{
     font-size: 18px;
     border-bottom: 1px solid #ccc;
@@ -102,22 +66,4 @@ a{
 .carros{
     padding-left: 200px;
     width: 690px;
-}
-#busqueda_opciones{
-    float:left;
-}
-#izq{
-    display:inline-block;
-    margin-right: 10px;
-    margin-top: 40px;
-}
-#cen{
-   display:inline-block;
-    margin-right: 10px;
-    margin-top: 40px;
-}
-#der{
-    display:inline-block;
-    margin-right: 10px;
-    margin-top: 40px;
 }

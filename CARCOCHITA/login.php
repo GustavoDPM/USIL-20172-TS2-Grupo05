@@ -9,6 +9,7 @@ if(isset($_SESSION["correo"])) {
 <html>
 	<head>
 			<title>Iniciar Sesión</title>
+			<link href="css/estilo.css" rel="stylesheet"/>
 			<link href="css/login.css" rel="stylesheet"/>
 	</head>
 	

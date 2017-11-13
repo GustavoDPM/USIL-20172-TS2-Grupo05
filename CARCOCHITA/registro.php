@@ -5,6 +5,7 @@ include 'configuracion.php';
 <html>
 	<head>
 			<title>Registrarse</title>
+			<link href="css/estilo.css" rel="stylesheet"/>
 			<link href="css/form.css" rel="stylesheet"/>
 	</head>
 	
