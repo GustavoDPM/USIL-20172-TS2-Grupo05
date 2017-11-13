@@ -1,12 +1,58 @@
 body{
-    font-family: arial;
-    background-image: url(https://images.hgmsites.net/lrg/bumblebee-chevrolet-camaro-from-transformers-the-last-knight_100555510_l.jpg);
-    color:white;
-    width:900px;
-    margin: 0 auto;
-    background-size:cover;
+	font-family: arial;
+	background-image:url(http://3.bp.blogspot.com/-wlt3bTnyySE/TXkFOVS10bI/AAAAAAAAACc/TIkmRzKyShU/s1600/Alfa-Romeo-8C-Competizione.jpg);
+	color: white;
+	width: 900px;
+	margin: 0 auto;
+	background-size: cover;
 	background-repeat: no-repeat;
 }
+h1{
+	text-align:center;
+}
+.linea{
+	padding: 10px 0;
+	
+}
+input{
+	border-radius: 6px;
+}
+::placeholder{
+	font-size: 12px;
+	font-family: Verdana;
+}
+.botones{
+	font-family: Sanvito Pro;
+	font-size: 20px;
+}
+input[type="text"],input[type="email"]{
+	width: 200px;
+}
+input[type="submit"]{
+	margin-left: 42%;
+}
+label{
+	display: block;
+	margin-bottom: 4px;
+	color: #FFFFFF;
+	font-size: 20px;
+	font-weight: 600;
+	
+}
+#contenedor{
+	width: 500px;
+	margin: 0auto;
+	border: 3px solid #333;
+	border-radius: 8px;
+	padding: 20px;
+	margin-left: 22%;
+}
+footer{
+	text-align: center;
+	border-top: 3px solid #fff;
+	padding: 10px;
+}
+
 header{
     background-color:#848484;
     height:80px;
@@ -33,10 +79,6 @@ header{
 #registrate{
     padding:0 15px;
 }
-
-
-
-
 h2{
     font-size: 18px;
     border-bottom: 1px solid #ccc;
@@ -79,4 +121,3 @@ a{
     margin-right: 10px;
     margin-top: 40px;
 }
-

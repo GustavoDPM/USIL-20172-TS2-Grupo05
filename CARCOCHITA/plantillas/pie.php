@@ -1,0 +1,1 @@
+<footer>&copy; <?php echo $configuracion["nombre"] ?> / Contacto: <?php echo $configuracion["correo"] ?> | <?php echo $configuracion["telefono"] ?></footer>

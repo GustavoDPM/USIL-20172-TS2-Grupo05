@@ -1,0 +1,78 @@
+body{
+    font-family: arial;
+    background-image: url(https://images.hgmsites.net/lrg/bumblebee-chevrolet-camaro-from-transformers-the-last-knight_100555510_l.jpg);
+    color:white;
+    width:900px;
+    margin: 0 auto;
+    background-size:cover;
+	background-repeat: no-repeat;
+}
+header{
+    background-color:#848484;
+    height:80px;
+}
+#izquierda{
+    float: left;
+    width: 33%;
+    text-align: center;
+    padding-top:20px;
+}
+#derecha{
+    float: right;
+    width:50%;
+    text-align: center;
+    padding-top:35px;
+    font-size:14px;
+}
+#iniciar{
+    padding:0 15px;
+}
+#vender{
+    padding:0 15px;
+}
+#registrate{
+    padding:0 15px;
+}
+
+h2{
+    font-size: 18px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 4px;
+}
+ul{
+    list-style-type: none;
+    padding-left:0;
+}
+li{
+    margin-bottom:14px;
+}
+li a{
+    color:white;
+    text-decoration: none;
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+.carros{
+    padding-left: 200px;
+    width: 690px;
+}
+#busqueda_opciones{
+    float:left;
+}
+#izq{
+    display:inline-block;
+    margin-right: 10px;
+    margin-top: 40px;
+}
+#cen{
+   display:inline-block;
+    margin-right: 10px;
+    margin-top: 40px;
+}
+#der{
+    display:inline-block;
+    margin-right: 10px;
+    margin-top: 40px;
+}
