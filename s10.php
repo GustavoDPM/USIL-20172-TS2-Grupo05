@@ -1,8 +1,9 @@
 <?php
-$bd = new PDO("mysql:host=localhost;dbname=carcocha", "root", "");
-$query = "SELECT * FROM chevrolet WHERE codigo = 2";
-$resultado = $bd->query($query);
-$fila = $resultado->fetch();
+$con=mysqli_connect('localhost','root','','carcochita');
+$mostrar="SELECT * FROM autos WHERE codigo=17";
+
+$resultado=mysqli_query($con,$mostrar);
+$fila = mysqli_fetch_array($resultado);
 ?>
 <!doctype html>
 <html>
@@ -12,33 +13,32 @@ $fila = $resultado->fetch();
     </head>
     <body>
         <?php include 'plantillas/header.php' ?>
-        <?php include 'plantillas/menu.php' ?>
-        <h1 id="chevrolet">CHEVROLET S10 </h1>
-		<section class="carros">
+        
+        <section class="carros">
             <div id="izq">
-			<h3><a class="marca" href="http://www.chevrolet.com.mx/content/dam/Chevrolet/lat-am/Mexico/nscwebsite/es/home/Pick-ups/S10%202017/Model%20Overview/01_images/qweqwe.jpg">Ver imagen completa</a></h3>
-            <img src="http://www.chevrolet.com.mx/content/dam/Chevrolet/lat-am/Mexico/nscwebsite/es/home/Pick-ups/S10%202017/Model%20Overview/01_images/qweqwe.jpg" width="200" style="height: 150px;"/>
+            <h1><p>Chevrolet S10</p></h1>
+            <img src="<?php echo $fila['imagen'] ?>" width="450" style="height: 350;"/>
             </div>
-			
+            
             <div id="cen">
-			<h3><a class="marca" href="https://i2.wp.com/autoblog.com.ar/wp-content/uploads/2017/08/LANZAMIENTO-CHEVROLET-S10-2018-1a.jpg">Ver imagen completa</a></h3>
-            <img src="https://i2.wp.com/autoblog.com.ar/wp-content/uploads/2017/08/LANZAMIENTO-CHEVROLET-S10-2018-1a.jpg" width="200" style="height: 150px;"/>
+            <h2>Marca:<?php echo $fila['marca'] ?></h2></br>
+			<h2>Modelo:<?php echo $fila['modelo'] ?></h2></br>
+			<h2>Año:<?php echo $fila['ano'] ?></h2></br>
             </div>
             
             <div id="der">
-			<h3><a class="marca" href="https://img.autocosmos.com/noticias/fotosprinc/NAZ_4ac682e45e9347aa92931bc5e2fa72cd.jpg">Ver imagen completa</a></h3>
-            <img src="https://img.autocosmos.com/noticias/fotosprinc/NAZ_4ac682e45e9347aa92931bc5e2fa72cd.jpg" width="200" style="height: 150px;"/>
+            <h2><p>Descripcion:</p></h2>
+            <p><?php echo $fila['descripcion'] ?></a>
             </div>
         </section>
-		<section class="datos" style="text-align: center; width: 400px; margin-left: 300px;">
-			<h1>Datos del carro</h1>
-			<div>		
-				<p>Modelo :<?php echo $fila["modelo"] ?></p>
-				<p>Año :<?php echo $fila["anio"] ?></p>
-				<p>Disponibilidad :<?php echo $fila["disponibilidad"] ?></p>
-				<p>Kilometraje :<?php echo $fila["kilometraje"] ?></p>
-				<p>Colores :<?php echo $fila["colores"] ?></p>	
-			</div>
-		</section>
+        <section class="carros">
+            
+            
+            <div id="der">
+            <a class="marca" href="comprar.php"><button>Comprar Auto</button></a>
+            </div>
+        </section>
+        <section id="clear"></section>
+        <?php include 'plantillas/pie.php' ?>
     </body>
 </html>

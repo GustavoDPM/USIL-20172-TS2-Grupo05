@@ -1,8 +1,9 @@
 <?php
-$bd = new PDO("mysql:host=localhost;dbname=carcocha", "root", "");
-$query = "SELECT * FROM chevrolet WHERE codigo = 1";
-$resultado = $bd->query($query);
-$fila = $resultado->fetch();
+$con=mysqli_connect('localhost','root','','carcochita');
+$mostrar="SELECT * FROM autos WHERE codigo=16";
+
+$resultado=mysqli_query($con,$mostrar);
+$fila = mysqli_fetch_array($resultado);
 ?>
 <!doctype html>
 <html>
@@ -12,33 +13,32 @@ $fila = $resultado->fetch();
     </head>
     <body>
         <?php include 'plantillas/header.php' ?>
-        <?php include 'plantillas/menu.php' ?>
-        <h1 id="chevrolet">CHEVROLET SPIN </h1>
-		<section class="carros">
+        
+        <section class="carros">
             <div id="izq">
-			<h3><a class="marca" href="http://www.todoautos.com.pe/portal/images/stories/lanzamientos/Nuevo-Chevrolet-Spin-Per%C3%BA-3.jpg">Ver imagen completa</a></h3>
-            <img src="http://www.todoautos.com.pe/portal/images/stories/lanzamientos/Nuevo-Chevrolet-Spin-Per%C3%BA-3.jpg" width="200" style="height: 150px;"/>
+            <h1><p>Chevrolet Spin</p></h1>
+            <img src="<?php echo $fila['imagen'] ?>" width="450" style="height: 350;"/>
             </div>
-			
+            
             <div id="cen">
-			<h3><a class="marca" href="http://www.chevrolet.com.ar/content/dam/Chevrolet/lat-am/Argentina/nscwebsite/es/home/SUVs/Spin/Model%20Overview/2013-chevrolet-spin-robusto-980x476-2.jpg">Ver imagen completa</a></h3>
-            <img src="http://www.chevrolet.com.ar/content/dam/Chevrolet/lat-am/Argentina/nscwebsite/es/home/SUVs/Spin/Model%20Overview/2013-chevrolet-spin-robusto-980x476-2.jpg" width="200" style="height: 150px;"/>
+            <h2>Marca:<?php echo $fila['marca'] ?></h2></br>
+			<h2>Modelo:<?php echo $fila['modelo'] ?></h2></br>
+			<h2>Año:<?php echo $fila['ano'] ?></h2></br>
             </div>
             
             <div id="der">
-			<h3><a class="marca" href="http://www.chevrolet.com.ar/content/dam/Chevrolet/lat-am/Argentina/nscwebsite/es/home/SUVs/Spin/Model%20Overview/2013-chevrolet-spin-espacio-carga-482x300-2.jpg">Ver imagen completa</a></h3>
-            <img src="http://www.chevrolet.com.ar/content/dam/Chevrolet/lat-am/Argentina/nscwebsite/es/home/SUVs/Spin/Model%20Overview/2013-chevrolet-spin-espacio-carga-482x300-2.jpg" width="200" style="height: 150px;"/>
+            <h2><p>Descripcion:</p></h2>
+            <p><?php echo $fila['descripcion'] ?></a>
             </div>
         </section>
-		<section class="datos" style="text-align: center; width: 400px; margin-left: 300px;">
-			<h1>Datos del carro</h1>
-			<div>		
-				<p>Modelo :<?php echo $fila["modelo"] ?></p>
-				<p>Año :<?php echo $fila["anio"] ?></p>
-				<p>Disponibilidad :<?php echo $fila["disponibilidad"] ?></p>
-				<p>Kilometraje :<?php echo $fila["kilometraje"] ?></p>
-				<p>Colores :<?php echo $fila["colores"] ?></p>	
-			</div>
-		</section>
+        <section class="carros">
+            
+            
+            <div id="der">
+            <a class="marca" href="comprar.php"><button>Comprar Auto</button></a>
+            </div>
+        </section>
+        <section id="clear"></section>
+        <?php include 'plantillas/pie.php' ?>
     </body>
 </html>
