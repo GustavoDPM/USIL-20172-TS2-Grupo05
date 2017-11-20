@@ -11,6 +11,16 @@ $fila = mysqli_fetch_array($resultado);
     <head>
         <title>Mi Carcochita</title>
         <link href="css/estilo.css" rel="stylesheet" />
+		<style>
+			button {
+			background: lightgrey;
+			padding: 10px;
+			border: 0;
+			}
+			button:hover {
+			background: gold;
+			}
+		</style>
     </head>
     <body>
         <?php include 'plantillas/header.php' ?>
